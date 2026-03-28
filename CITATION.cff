@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "Amplifiers at the Boundary"
+message: "If you use or reference this work, please cite it as below."
+type: dataset
+authors:
+  - family-names: Warring
+    given-names: Ulrich
+    affiliation: "Physikalisches Institut, Albert-Ludwigs-Universität Freiburg"
+date-released: "2026-03-28"
+license: CC-BY-4.0
+url: "https://example.org/amplifiers-at-the-boundary"
+repository-code: "https://github.com/example/amplifiers-at-the-boundary"
+abstract: >-
+  A project on the epistemology of near-critical sensing, consisting of
+  a historical dossier on atmospheric instruments (15th–19th century)
+  and an interpretive essay connecting 19th-century sentinel instruments
+  to modern critical-transition theory. The central argument is that
+  sentinel devices — storm glasses, leech barometers, frog barometers —
+  were displaced not because they were insensitive, but because they were
+  non-invertible, and that the question they were trying to answer (how
+  close is a system to a qualitative change?) is now central to modern
+  science.
+keywords:
+  - atmospheric instruments
+  - history of meteorology
+  - critical transitions
+  - early warning signals
+  - near-critical sensing
+  - storm glass
+  - invertibility
+  - bifurcation theory
+references:
+  - type: article
+    title: "From Natural Signs to Measurement Networks: A Historical Dossier on Atmospheric Instruments (15th–19th Century)"
+    authors:
+      - family-names: Warring
+        given-names: Ulrich
+    version: "0.1.3"
+    date-released: "2026-03-28"
+  - type: article
+    title: "Amplifiers at the Boundary: On the Epistemology of Near-Critical Sensing"
+    authors:
+      - family-names: Warring
+        given-names: Ulrich
+    version: "0.2.1"
+    date-released: "2026-03-28"
