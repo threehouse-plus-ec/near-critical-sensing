@@ -4,7 +4,7 @@
 
 **Version:** 0.1.3  
 **Date:** 2026-03-28  
-**Status:** Draft — source-hardened, editorially tightened, not frozen  
+**Status:** Frozen (source-hardened, editorially tightened)  
 **Endorsement Marker:** Local candidate framework. The six-layer taxonomy (state / transport / integration / radiation / electrical / sentinel) is an analytic category introduced in this dossier to compare instruments by epistemological function. It does not claim parity with externally validated physical laws. No external endorsement is implied.
 
 ---
