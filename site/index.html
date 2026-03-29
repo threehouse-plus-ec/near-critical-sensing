@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Near-Critical Sensing — Project Landing Page</title>
+  <link rel="stylesheet" href="css/scholarly.css">
+  <style>
+/* scholarly.css — clean typography for academic texts */
+
+:root {
+  --text: #1a1a1a;
+  --bg: #fafaf8;
+  --accent: #2c4a6e;
+  --border: #d4d0c8;
+  --footnote: #555;
+  --code-bg: #f0eeea;
+  --max-width: 42rem;
+  --font-body: 'Source Serif 4', 'Georgia', serif;
+  --font-heading: 'Source Sans 3', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Source Code Pro', 'Menlo', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600&family=Source+Code+Pro:wght@400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 2rem 1.5rem 4rem;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* — Headings — */
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+}
+
+h1 + em, h1 + p > em:first-child {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--footnote);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem;
+  color: var(--text);
+}
+
+/* — Paragraphs and prose — */
+
+p {
+  margin: 0 0 1rem;
+  text-align: left;
+  hyphens: auto;
+}
+
+/* — Front matter block — */
+
+.front-matter {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--footnote);
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 2rem;
+  border-radius: 3px;
+}
+
+.front-matter p {
+  margin: 0.15rem 0;
+}
+
+/* — Blockquotes — */
+
+blockquote {
+  margin: 1.25rem 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 3px solid var(--border);
+  color: var(--footnote);
+}
+
+/* — Lists — */
+
+ul, ol {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+/* — Tables — */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.9rem;
+}
+
+thead {
+  border-bottom: 2px solid var(--text);
+}
+
+th {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+}
+
+td {
+  padding: 0.35rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+/* — Code — */
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--code-bg);
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+
+pre {
+  background: var(--code-bg);
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* — Horizontal rules — */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* — Links — */
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #1a3555;
+}
+
+/* — Footnotes — */
+
+.footnote-ref {
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--footnote);
+}
+
+.footnotes ol {
+  padding-left: 1.25rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.75rem;
+}
+
+.footnotes p {
+  margin: 0;
+}
+
+/* — Emphasis — */
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+/* — Navigation — */
+
+nav.site-nav {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav.site-nav a {
+  margin-right: 1.25rem;
+  text-decoration: none;
+  color: var(--footnote);
+}
+
+nav.site-nav a:hover {
+  color: var(--accent);
+}
+
+/* — Print — */
+
+@media print {
+  body {
+    font-size: 11pt;
+    color: #000;
+    background: #fff;
+  }
+  nav.site-nav, .front-matter {
+    display: none;
+  }
+  h2 {
+    border-bottom-color: #000;
+    color: #000;
+  }
+}
+
+/* — Responsive — */
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    padding: 1rem 1rem 3rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  table {
+    font-size: 0.8rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <main>
+    
+    
+<h1>Amplifiers at the Boundary</h1>
+<p><em>A project on the epistemology of near-critical sensing</em></p>
+
+<div class="front-matter">
+<p>U. Warring · Physikalisches Institut, Albert-Ludwigs-Universität Freiburg</p>
+<p>2026 · Local candidate framework (Harbour / Sail)</p>
+</div>
+
+<p>This project examines atmospheric instruments from the 15th to the 19th century through an epistemological lens, asking not <em>when</em> each device was invented but <em>what kind of knowledge</em> it produces. The central finding is a distinction between <strong>calibrated state instruments</strong> (barometers, thermometers, hygrometers), whose output can be inverted to recover an atmospheric variable, and <strong>sentinel instruments</strong> (storm glasses, leech barometers, frog barometers), whose output amplifies regime transitions but cannot be read backwards to recover any single quantity.</p>
+
+<p>The project consists of two documents:</p>
+
+<h2>Documents</h2>
+
+<h3><a href="dossier.html">Historical Dossier: From Natural Signs to Measurement Networks</a></h3>
+<p>A comprehensive historical survey of atmospheric instruments organised by epistemological function across six layers: state, transport, integration, radiation, electrical, and sentinel. Includes primary-source citations, historiographic references, and a detailed timeline. This is the <strong>Coastline</strong> document — it maps the historical territory.</p>
+<p><em>Version 0.1.3 (frozen) · ~12,000 words</em></p>
+
+<h3><a href="essay.html">Essay: Amplifiers at the Boundary</a></h3>
+<p>An interpretive essay arguing that the 19th-century sentinel tradition — displaced because its devices were non-invertible — was asking a question that modern science now takes seriously: <em>how close is a system to a qualitative change?</em> Connects storm-glass physics to bifurcation theory, critical slowing down, early warning signals, and non-Hermitian quantum boundary sensing. This is the <strong>Sail</strong> document — it interprets and argues.</p>
+<p><em>Version 0.3.0 (circulation-ready) · ~6,500 words</em></p>
+
+<h3>Quantum Dossier: Quantum Systems Near Critical Points <em>(in progress)</em></h3>
+<p>A trapped-ion-centred survey of quantum systems near structural, spectral, topological, and dissipative boundaries. Organised by boundary type, not by platform. Includes a dedicated treatment of the EP sensing controversy (signal enhancement vs. noise penalty). This is a second <strong>Coastline</strong> document — it maps the quantum territory.</p>
+<p><em>Section 0 frozen (v0.1.1) · Section 1 drafted · Sections 2–8 pending · Projected ~18,000 words</em></p>
+
+<h2>How the documents relate</h2>
+
+<p>The <strong>historical dossier</strong> is documentary. It establishes facts, dates, attributions, and sources. Its categories (state / transport / integration / radiation / electrical / sentinel) are explicitly marked as analytic rather than actor-native. It does not argue for a thesis; it maps an instrument landscape.</p>
+
+<p>The <strong>essay</strong> is interpretive and argumentative. It takes the sentinel concept from the dossier and develops it into a physics argument about the relationship between sensitivity, invertibility, and proximity to regime boundaries. It is self-contained but references the dossier as a companion.</p>
+
+<p>The <strong>quantum dossier</strong> is technical. It extends the boundary-sensing framework into quantum systems, using trapped ions as the anchor platform. It is standalone — it can be read without the other two documents — but shares the same organising principle: amplified response near a boundary, with attendant degradation of information recoverability.</p>
+
+<hr>
+
+<p style="font-size: 0.85rem; color: #555;">Source texts maintained in Markdown. See <a href="https://github.com/threehouse-plus-ec/near-critical-sensing">repository</a> for source files, licence, and citation information.</p>
+
+  </main>
+</body>
+</html>
