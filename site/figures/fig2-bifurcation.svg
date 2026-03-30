@@ -47,6 +47,6 @@
   <text class="an" x="506" y="178">no equilibrium</text>
   <text class="an" x="506" y="192">(system escapes)</text>
   <text class="mt" x="160" y="115">dx/dt = r + x²</text>
-  <text class="cap" x="340" y="405" text-anchor="middle">Fig. 1  Saddle-node bifurcation. Near the fold (r → 0⁻), the eigenvalue</text>
+  <text class="cap" x="340" y="405" text-anchor="middle">Fig. 2  Saddle-node bifurcation. Near the fold (r → 0⁻), the eigenvalue</text>
   <text class="cap" x="340" y="419" text-anchor="middle">λ vanishes: recovery slows, fluctuations grow, invertibility degrades.</text>
 </svg>

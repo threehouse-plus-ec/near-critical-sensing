@@ -3,7 +3,7 @@
 
 Reads markdown from the repository's canonical locations:
   - atmospheric-dossier/dossier-atmospheric-instruments-v0.1.3-FROZEN.md
-  - essay/amplifiers-at-the-boundary-v0.4.0.md
+  - essay/amplifiers-at-the-boundary-v0.4.1.md
 
 Outputs HTML to site/ for GitHub Pages deployment.
 """
@@ -24,7 +24,7 @@ SOURCES = {
     "dossier": os.path.join(REPO_ROOT, "atmospheric-dossier",
                             "dossier-atmospheric-instruments-v0.1.3-FROZEN.md"),
     "essay": os.path.join(REPO_ROOT, "essay",
-                          "amplifiers-at-the-boundary-v0.4.0.md"),
+                          "amplifiers-at-the-boundary-v0.4.1.md"),
 }
 
 # Markdown extensions
@@ -117,6 +117,30 @@ def extract_front_matter(md_text):
     return front_lines, '\n'.join(body_lines)
 
 
+FIGURE_MAP = {
+    "<!-- FIGURE_1_ANCHOR -->": "fig1-two-paradigms.svg",
+    "<!-- FIGURE_2_ANCHOR -->": "fig2-bifurcation.svg",
+    "<!-- FIGURE_3_ANCHOR -->": "fig3-three-anchors.svg",
+}
+
+
+def inject_figures(html):
+    """Replace figure anchor comments with inline SVG wrapped in <figure>."""
+    fig_dir = os.path.join(SITE_DIR, "figures")
+    for anchor, filename in FIGURE_MAP.items():
+        if anchor not in html:
+            continue
+        svg_path = os.path.join(fig_dir, filename)
+        if not os.path.exists(svg_path):
+            print(f"  WARNING: Figure not found: {svg_path}")
+            continue
+        with open(svg_path, 'r') as f:
+            svg_content = f.read()
+        figure_html = f'<figure class="essay-figure">\n{svg_content}\n</figure>'
+        html = html.replace(anchor, figure_html)
+    return html
+
+
 def build_document(src_path, out_filename, title):
     """Build one HTML page from a markdown source file."""
     if not os.path.exists(src_path):
@@ -134,6 +158,9 @@ def build_document(src_path, out_filename, title):
         items = "".join(f"<p>{line}</p>" for line in front_lines)
         front_block = f'<div class="front-matter">{items}</div>'
         body_html = body_html.replace('</h1>', f'</h1>\n{front_block}', 1)
+
+    # Inject inline SVG figures at anchor points
+    body_html = inject_figures(body_html)
 
     full_html = html_template(title, body_html)
     out_path = os.path.join(SITE_DIR, out_filename)
@@ -166,7 +193,7 @@ def build_landing_page():
 
 <h3><a href="essay.html">Essay: Amplifiers at the Boundary</a></h3>
 <p>An interpretive essay arguing that the sentinel tradition was displaced because its devices were non-invertible, and that the question sentinels were trying to answer &mdash; <em>how close is a system to a qualitative change?</em> &mdash; is now central to modern science. Connects storm-glass physics to bifurcation theory, critical slowing down, early warning signals, and non-Hermitian quantum boundary sensing. This is the <strong>Sail</strong> document &mdash; it interprets and argues.</p>
-<p><em>Version 0.4.0 (polished) &middot; ~5,900 words</em></p>
+<p><em>Version 0.4.1 (polished) &middot; ~6,010 words</em></p>
 
 <h3>Quantum Dossier: Quantum Systems Near Critical Points <em>(in progress)</em></h3>
 <p>A trapped-ion-centred survey of quantum systems near structural, spectral, topological, and dissipative boundaries. Organised by boundary type, not by platform. Includes a dedicated treatment of the EP sensing controversy (signal enhancement vs. noise penalty). This is a second <strong>Coastline</strong> document &mdash; it maps the quantum territory.</p>

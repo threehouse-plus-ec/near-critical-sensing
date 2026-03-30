@@ -113,13 +113,13 @@ blockquote {
 
 /* — Figures — */
 
-figure {
+figure.essay-figure {
   margin: 2rem 0;
   padding: 0;
   text-align: center;
 }
 
-figure img {
+figure.essay-figure svg {
   max-width: 100%;
   height: auto;
 }

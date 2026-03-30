@@ -64,7 +64,7 @@
   <polygon points="530,178 526,185 534,183" fill="#a0664d"/>
   <polygon points="582,130 586,122 578,124" fill="#a0664d" opacity=".6"/>
 
-  <text class="cap" x="340" y="360" text-anchor="middle">Fig. 2  Left: a calibrated instrument's smooth, monotonic transfer function supports</text>
+  <text class="cap" x="340" y="360" text-anchor="middle">Fig. 1  Left: a calibrated instrument's smooth, monotonic transfer function supports</text>
   <text class="cap" x="340" y="374" text-anchor="middle">inversion (output → input). Right: near a boundary, the map becomes singular and</text>
   <text class="cap" x="340" y="388" text-anchor="middle">hysteretic — high gain, but no unique inverse. Sensitivity and ambiguity are linked.</text>
 </svg>
