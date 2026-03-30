@@ -41,6 +41,10 @@ By 1900, sentinels had been largely displaced from serious meteorological practi
 
 The displacement thesis is itself falsifiable: it predicts that where invertibility is not required — in early warning systems, critical-transition detection, or qualitative hazard communication — sentinel-type approaches should persist or re-emerge.
 
+<figure>
+<img src="figures/fig2-two-paradigms.svg" alt="Fig. 2 — Two measurement paradigms: calibrated (smooth, invertible) vs. sentinel (singular, hysteretic, non-invertible).">
+</figure>
+
 ### Interlude: perception as a compressive detector
 
 A useful comparison clarifies why sentinel devices feel so natural despite their scientific displacement.
@@ -70,6 +74,10 @@ Consider the simplest dynamical system that exhibits a qualitative change in beh
 where x is the state of the system and r is a control parameter. For r < 0, the system has two equilibria — one stable, one unstable. As r increases toward zero, the two equilibria approach each other. At r = 0 they collide and annihilate. For r > 0, no equilibrium exists; the system escapes.
 
 What matters for sensing is what happens to the *dynamics* near the surviving equilibrium as r → 0⁻. The stable fixed point sits at x_* = −√(−r). Linearising, the Jacobian is ∂(r + x²)/∂x = 2x_*, so the eigenvalue governing the return rate is λ = 2x_* = −2√(−r), which vanishes as r → 0⁻. After a perturbation, the system recovers more and more slowly. This is *critical slowing down*, first identified as a generic feature of systems near thresholds by Wissel in 1984.[^5]
+
+<figure>
+<img src="figures/fig1-bifurcation.svg" alt="Fig. 1 — Saddle-node bifurcation diagram showing stable and unstable branches meeting at the fold, with eigenvalue λ vanishing near the boundary.">
+</figure>
 
 In any system driven by noise — and all real systems are — the slowing recovery has measurable consequences. Perturbations that would normally decay quickly instead accumulate: variance rises. Successive measurements become increasingly correlated, because the system takes longer to forget each disturbance: autocorrelation rises. Very close to the bifurcation, the system may exhibit transient excursions ("flickering") toward an alternative state before returning.
 
@@ -180,6 +188,10 @@ The experiment would bridge two communities — complex-systems science and trap
 **Does the sentinel framework clarify the EP sensing controversy?** The debate over exceptional-point-enhanced sensing has been conducted primarily within a single objective: parameter estimation. The question has been whether the ε^{1/n} eigenvalue response survives quantum noise well enough to improve the signal-to-noise ratio for recovering a parameter value. The sentinel framework suggests a reframing. If the measurement task is not parameter estimation but proximity detection — monitoring how close the system is to the spectral singularity — then the Petermann factor K, whose divergence at the EP is usually treated as a noise penalty, becomes a measurable proxy for proximity to the boundary within a calibrated model. The rising fluctuation amplitude near the EP carries information about proximity to the spectral degeneracy, just as rising variance near a classical bifurcation carries information about distance from the critical point.
 
 This reframing does not contradict results on fundamental limits for parameter estimation near exceptional points. It changes the objective function. Whether this change is productive — whether proximity detection near an EP yields practically useful information that parameter estimation does not — is an open question. But it would, at minimum, clarify what question each side of the controversy is answering, and it would connect the EP sensing literature to the much older body of work on early warning signals in complex systems.
+
+<figure>
+<img src="figures/fig3-three-anchors.svg" alt="Fig. 3 — Three anchors on a shared axis: storm glass and melting crystal near the boundary; pressure gauge far from it. Same apparatus, different question.">
+</figure>
 
 ### Closing
 

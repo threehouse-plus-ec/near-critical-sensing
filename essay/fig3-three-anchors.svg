@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 350" width="100%">
+  <style>
+    .ax{stroke:#1a1a1a;stroke-width:1;fill:none}
+    .lab{font-family:'Source Sans 3',sans-serif;font-size:12px;fill:#555}
+    .lab-b{font-family:'Source Sans 3',sans-serif;font-size:13px;fill:#1a1a1a;font-weight:600}
+    .an{font-family:'Source Sans 3',sans-serif;font-size:11px;fill:#555}
+    .an-b{font-family:'Source Sans 3',sans-serif;font-size:11px;fill:#2c4a6e}
+    .tw{font-family:'Source Sans 3',sans-serif;font-size:13px;fill:#a0664d;font-weight:600}
+    .sub{font-family:'Source Sans 3',sans-serif;font-size:11px;fill:#555}
+    .sz{fill:#a0664d;opacity:.10}
+    .fz{fill:#2c4a6e;opacity:.05}
+    .bl{stroke:#a0664d;stroke-width:1.5}
+    .cn{stroke:#d4d0c8;stroke-width:.8}
+    .cap{font-family:'Source Sans 3',sans-serif;font-size:12px;fill:#555}
+    .era{font-family:'Source Sans 3',sans-serif;font-size:10px;fill:#999;letter-spacing:.5px}
+  </style>
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a0664d" stop-opacity=".7"/>
+      <stop offset="60%" stop-color="#a0664d" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#a0664d" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ig" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2c4a6e" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#2c4a6e" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#2c4a6e" stop-opacity=".5"/>
+    </linearGradient>
+  </defs>
+
+  <line class="ax" x1="80" y1="190" x2="620" y2="190"/>
+  <polygon points="80,190 88,187 88,193" fill="#1a1a1a"/>
+  <polygon points="620,190 612,187 612,193" fill="#1a1a1a"/>
+  <text class="lab" x="62" y="194" text-anchor="end">near</text>
+  <text class="lab" x="636" y="194">far</text>
+  <text class="lab-b" x="350" y="216" text-anchor="middle">distance to regime boundary</text>
+
+  <rect class="sz" x="80" y="40" width="200" height="145"/>
+  <rect class="fz" x="400" y="40" width="220" height="145"/>
+  <text class="tw" x="180" y="58" text-anchor="middle">sentinel regime</text>
+  <text class="an" x="180" y="73" text-anchor="middle">high gain · ill-conditioned</text>
+  <text class="an-b" x="510" y="58" text-anchor="middle">calibrated regime</text>
+  <text class="an" x="510" y="73" text-anchor="middle">stable · invertible</text>
+
+  <line class="bl" x1="280" y1="40" x2="280" y2="185"/>
+  <text class="an" x="280" y="35" text-anchor="middle" fill="#a0664d">boundary</text>
+
+  <rect x="80" y="230" width="300" height="6" rx="3" fill="url(#gg)"/>
+  <text class="an" x="80" y="250" fill="#a0664d">↑ gain</text>
+  <rect x="200" y="258" width="400" height="6" rx="3" fill="url(#ig)"/>
+  <text class="an" x="620" y="278" text-anchor="end" fill="#2c4a6e">↑ invertibility</text>
+
+  <!-- Storm glass -->
+  <circle cx="140" cy="120" r="6" fill="#a0664d" opacity=".8"/>
+  <line class="cn" x1="140" y1="126" x2="140" y2="185"/>
+  <text class="lab-b" x="140" y="108" text-anchor="middle">Storm glass</text>
+  <text class="sub" x="140" y="143" text-anchor="middle">multi-component solution</text>
+  <text class="sub" x="140" y="155" text-anchor="middle">near solubility limit</text>
+  <text class="era" x="140" y="168" text-anchor="middle">1860s</text>
+
+  <!-- Melting crystal -->
+  <circle cx="210" cy="120" r="6" fill="#a0664d" opacity=".8"/>
+  <line class="cn" x1="210" y1="126" x2="210" y2="185"/>
+  <text class="lab-b" x="260" y="108" text-anchor="middle">Melting crystal</text>
+  <text class="sub" x="260" y="143" text-anchor="middle">ion Coulomb crystal</text>
+  <text class="sub" x="260" y="155" text-anchor="middle">near melting boundary</text>
+  <text class="era" x="260" y="168" text-anchor="middle">2020s</text>
+  <line x1="216" y1="116" x2="238" y2="108" stroke="#d4d0c8" stroke-width=".5" fill="none"/>
+
+  <!-- Pressure gauge -->
+  <circle cx="530" cy="120" r="6" fill="#2c4a6e" opacity=".6"/>
+  <line class="cn" x1="530" y1="126" x2="530" y2="185"/>
+  <text class="lab-b" x="530" y="108" text-anchor="middle">Pressure gauge</text>
+  <text class="sub" x="530" y="143" text-anchor="middle">cold-atom standard</text>
+  <text class="sub" x="530" y="155" text-anchor="middle">SI-traceable, invertible</text>
+  <text class="era" x="530" y="168" text-anchor="middle">2020s</text>
+
+  <!-- Connection arc -->
+  <path d="M216,130 C310,160 430,160 524,130" fill="none" stroke="#d4d0c8" stroke-width=".8" stroke-dasharray="4 3"/>
+  <text class="an" x="370" y="162" text-anchor="middle" fill="#999">same apparatus · different question</text>
+
+  <text class="cap" x="340" y="304" text-anchor="middle">Fig. 3  Three anchors on a shared axis. The storm glass and the melting crystal</text>
+  <text class="cap" x="340" y="318" text-anchor="middle">operate near the boundary (high gain, non-invertible). The pressure gauge operates</text>
+  <text class="cap" x="340" y="332" text-anchor="middle">far from it (stable, invertible). The melting crystal and the pressure gauge share</text>
+  <text class="cap" x="340" y="346" text-anchor="middle">the same physical platform — the difference is the question being asked.</text>
+</svg>

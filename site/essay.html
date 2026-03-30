@@ -119,6 +119,19 @@ blockquote {
   color: var(--footnote);
 }
 
+/* — Figures — */
+
+figure {
+  margin: 2rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* — Lists — */
 
 ul, ol {
@@ -316,6 +329,10 @@ nav.site-nav a:hover {
 <p>A boundary clarification is useful here. Some calibrated instruments also integrate multiple variables — the evaporation pan, for instance, responds jointly to temperature, humidity, wind, and radiation. But such compound indicators sum known variables through a process that can be decomposed (via the Penman–Monteith equation, in the case of evaporation). Sentinels integrate unknown weightings through nonlinear phase transitions. The evaporation pan is a linear integrator; the storm glass is a nonlinear amplifier. This distinction — known-linear versus unknown-nonlinear integration — is what separates the sentinel category from compound measurement.</p>
 <p>By 1900, sentinels had been largely displaced from serious meteorological practice. The standard explanation — that they were unreliable — understates what happened. Storm glasses are not insensitive; they are, if anything, hypersensitive. The problem is not weak signal but unreadable signal. Non-invertibility was the epistemological core of the displacement, though it interacted with institutional requirements that the quantitative programme of 19th-century meteorology increasingly demanded: standardisation across stations, inter-observer comparability, manufacturability, manageable maintenance.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
 <p>The displacement thesis is itself falsifiable: it predicts that where invertibility is not required — in early warning systems, critical-transition detection, or qualitative hazard communication — sentinel-type approaches should persist or re-emerge.</p>
+<figure>
+<img src="figures/fig2-two-paradigms.svg" alt="Fig. 2 — Two measurement paradigms: calibrated (smooth, invertible) vs. sentinel (singular, hysteretic, non-invertible).">
+</figure>
+
 <h3 id="interlude-perception-as-a-compressive-detector">Interlude: perception as a compressive detector</h3>
 <p>A useful comparison clarifies why sentinel devices feel so natural despite their scientific displacement.</p>
 <p>Human sensory systems are not linear meters. Over wide dynamic ranges, they respond compressively and are particularly sensitive to contrast, relative change, and threshold crossing rather than to absolute magnitude. We hear ratios of sound intensity more readily than absolute power. We detect changes in brightness more reliably than fixed luminance levels. A shift in the wind, a drop in light quality before a storm: these are perceptual signals of <em>transition</em>, not calibrated readings of state.</p>
@@ -331,6 +348,10 @@ nav.site-nav a:hover {
 <p>dx/dt = r + x²</p>
 <p>where x is the state of the system and r is a control parameter. For r &lt; 0, the system has two equilibria — one stable, one unstable. As r increases toward zero, the two equilibria approach each other. At r = 0 they collide and annihilate. For r &gt; 0, no equilibrium exists; the system escapes.</p>
 <p>What matters for sensing is what happens to the <em>dynamics</em> near the surviving equilibrium as r → 0⁻. The stable fixed point sits at x_<em> = −√(−r). Linearising, the Jacobian is ∂(r + x²)/∂x = 2x_</em>, so the eigenvalue governing the return rate is λ = 2x_<em> = −2√(−r), which vanishes as r → 0⁻. After a perturbation, the system recovers more and more slowly. This is </em>critical slowing down*, first identified as a generic feature of systems near thresholds by Wissel in 1984.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></p>
+<figure>
+<img src="figures/fig1-bifurcation.svg" alt="Fig. 1 — Saddle-node bifurcation diagram showing stable and unstable branches meeting at the fold, with eigenvalue λ vanishing near the boundary.">
+</figure>
+
 <p>In any system driven by noise — and all real systems are — the slowing recovery has measurable consequences. Perturbations that would normally decay quickly instead accumulate: variance rises. Successive measurements become increasingly correlated, because the system takes longer to forget each disturbance: autocorrelation rises. Very close to the bifurcation, the system may exhibit transient excursions (&ldquo;flickering&rdquo;) toward an alternative state before returning.</p>
 <p>These statistical signatures — rising variance, rising autocorrelation, flickering — are collectively known as <em>early warning signals</em>. Scheffer and colleagues formalised the insight in a landmark 2009 paper: these indicators are generic, arising from the eigenvalue structure near any codimension-one bifurcation, not from the specific physics of the system.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> The cleanest results concern fold and pitchfork bifurcations with additive noise; other bifurcation types and higher-dimensional systems can introduce subtleties, including false positives and sensitivity to observable choice. Nevertheless, the same statistical tests have been applied to ice-core records, ecological population time series, and laboratory oscillators alike.</p>
 <p>The generality is both the strength and the limitation. Early warning signals detect proximity to a transition but cannot identify which transition is approaching or what the system will do afterwards. They sense the boundary without diagnosing the territory on either side. This should sound familiar: it is, in mathematical language, the epistemological profile of the sentinel.</p>
@@ -386,6 +407,10 @@ nav.site-nav a:hover {
 <p>The experiment would bridge two communities — complex-systems science and trapped-ion physics — that have developed their approaches to criticality largely independently. A positive result would validate EWS methods in a new regime. A null result — absence of classical early-warning signatures in the quantum setting — would itself be informative, indicating that quantum fluctuations or measurement backaction alter the approach to criticality in ways the classical framework does not capture. Either outcome constitutes a genuine test.</p>
 <p><strong>Does the sentinel framework clarify the EP sensing controversy?</strong> The debate over exceptional-point-enhanced sensing has been conducted primarily within a single objective: parameter estimation. The question has been whether the ε^{1/n} eigenvalue response survives quantum noise well enough to improve the signal-to-noise ratio for recovering a parameter value. The sentinel framework suggests a reframing. If the measurement task is not parameter estimation but proximity detection — monitoring how close the system is to the spectral singularity — then the Petermann factor K, whose divergence at the EP is usually treated as a noise penalty, becomes a measurable proxy for proximity to the boundary within a calibrated model. The rising fluctuation amplitude near the EP carries information about proximity to the spectral degeneracy, just as rising variance near a classical bifurcation carries information about distance from the critical point.</p>
 <p>This reframing does not contradict results on fundamental limits for parameter estimation near exceptional points. It changes the objective function. Whether this change is productive — whether proximity detection near an EP yields practically useful information that parameter estimation does not — is an open question. But it would, at minimum, clarify what question each side of the controversy is answering, and it would connect the EP sensing literature to the much older body of work on early warning signals in complex systems.</p>
+<figure>
+<img src="figures/fig3-three-anchors.svg" alt="Fig. 3 — Three anchors on a shared axis: storm glass and melting crystal near the boundary; pressure gauge far from it. Same apparatus, different question.">
+</figure>
+
 <h3 id="closing">Closing</h3>
 <p>The controlled sentinel is, in a limited sense, an engineered analogue of perception. Biological sensory systems operate near thresholds, amplify small deviations, and trade absolute accuracy for sensitivity to change. What they lack — and what prevented 19th-century sentinels from becoming scientific instruments — is calibration and a tractable inverse map. Modern near-critical sensors retain the amplification. They embed it within a framework that allows quantitative interpretation. The goal is not to replace calibrated measurement but to complement it with systems explicitly optimised for transition rather than state.</p>
 <p>The history of measurement is usually told as a story of increasing precision and invertibility. That story is real and important. But it is not the whole story. Some of the most consequential questions in modern science — are we approaching a tipping point? is the current regime stable? how close is this system to a qualitative change? — are inherently transition questions, not state questions. For these, the sentinel tradition, now equipped with the mathematics it always lacked, may have something to teach us.</p>

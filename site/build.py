@@ -8,8 +8,10 @@ Reads markdown from the repository's canonical locations:
 Outputs HTML to site/ for GitHub Pages deployment.
 """
 
+import glob
 import markdown
 import os
+import shutil
 import sys
 
 # Resolve paths relative to this script's parent (repo root)
@@ -204,6 +206,14 @@ def main():
 
     if not ok:
         print("  Some sources missing. Building what is available.")
+
+    # Copy figures
+    fig_src = os.path.join(REPO_ROOT, "essay", "*.svg")
+    fig_dst = os.path.join(SITE_DIR, "figures")
+    os.makedirs(fig_dst, exist_ok=True)
+    for svg in glob.glob(fig_src):
+        shutil.copy2(svg, fig_dst)
+        print(f"  Copied: figures/{os.path.basename(svg)}")
 
     build_landing_page()
 

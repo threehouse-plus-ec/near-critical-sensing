@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="100%">
+  <style>
+    .ax{stroke:#1a1a1a;stroke-width:1;fill:none}
+    .ax-it{font-family:'Source Serif 4',Georgia,serif;font-size:15px;fill:#1a1a1a;font-style:italic}
+    .tk{font-family:'Source Sans 3',sans-serif;font-size:11px;fill:#555}
+    .an{font-family:'Source Sans 3',sans-serif;font-size:12px;fill:#555}
+    .an-b{font-family:'Source Sans 3',sans-serif;font-size:12px;fill:#2c4a6e}
+    .an-w{font-family:'Source Sans 3',sans-serif;font-size:12px;fill:#a0664d}
+    .br-s{stroke:#2c4a6e;stroke-width:2;fill:none}
+    .br-u{stroke:#2c4a6e;stroke-width:1.5;fill:none;stroke-dasharray:6 4}
+    .sr{fill:#a0664d;opacity:.12}
+    .sb{stroke:#a0664d;stroke-width:1;stroke-dasharray:4 3;fill:none}
+    .df{fill:#1a1a1a}
+    .mt{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;fill:#1a1a1a}
+    .ms{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:11px;fill:#555}
+    .cap{font-family:'Source Sans 3',sans-serif;font-size:12px;fill:#555}
+  </style>
+  <rect class="sr" x="340" y="60" width="100" height="290"/>
+  <line class="sb" x1="340" y1="60" x2="340" y2="350"/>
+  <line class="sb" x1="440" y1="60" x2="440" y2="350"/>
+  <line class="ax" x1="100" y1="230" x2="560" y2="230"/>
+  <line class="ax" x1="460" y1="60" x2="460" y2="380"/>
+  <polygon points="560,230 552,226 552,234" fill="#1a1a1a"/>
+  <polygon points="460,60 456,68 464,68" fill="#1a1a1a"/>
+  <text class="ax-it" x="568" y="234">r</text>
+  <text class="ax-it" x="450" y="52">x</text>
+  <line x1="460" y1="226" x2="460" y2="234" stroke="#1a1a1a" stroke-width="1"/>
+  <text class="tk" x="460" y="248" text-anchor="middle">0</text>
+  <path class="br-s" d="M140,400 C180,385 260,358 300,350 S370,320 400,300 S440,268 456,249 Q458,240 460,230"/>
+  <path class="br-u" d="M140,60 C180,75 260,102 300,110 S370,140 400,160 S440,192 456,211 Q458,220 460,230"/>
+  <circle class="df" cx="460" cy="230" r="4"/>
+  <text class="an-b" x="148" y="394">stable</text>
+  <text class="an-b" x="148" y="78">unstable</text>
+  <text class="an-w" x="200" y="378">λ = −2√(−r)</text>
+  <line x1="310" y1="344" x2="310" y2="322" stroke="#a0664d" stroke-width="1.5"/>
+  <polygon points="310,320 307,328 313,328" fill="#a0664d"/>
+  <text class="ms" x="320" y="335">fast recovery</text>
+  <line x1="425" y1="286" x2="425" y2="278" stroke="#a0664d" stroke-width="1.5"/>
+  <polygon points="425,276 422,283 428,283" fill="#a0664d"/>
+  <text class="ms" x="407" y="270" text-anchor="end">slow</text>
+  <text class="an-w" x="390" y="78" text-anchor="middle">sentinel</text>
+  <text class="an-w" x="390" y="92" text-anchor="middle">regime</text>
+  <line x1="485" y1="200" x2="485" y2="140" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="3 3"/>
+  <polygon points="485,138 482,146 488,146" fill="#1a1a1a"/>
+  <line x1="495" y1="260" x2="495" y2="320" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="3 3"/>
+  <polygon points="495,322 492,314 498,314" fill="#1a1a1a"/>
+  <text class="an" x="506" y="178">no equilibrium</text>
+  <text class="an" x="506" y="192">(system escapes)</text>
+  <text class="mt" x="160" y="115">dx/dt = r + x²</text>
+  <text class="cap" x="340" y="405" text-anchor="middle">Fig. 1  Saddle-node bifurcation. Near the fold (r → 0⁻), the eigenvalue</text>
+  <text class="cap" x="340" y="419" text-anchor="middle">λ vanishes: recovery slows, fluctuations grow, invertibility degrades.</text>
+</svg>

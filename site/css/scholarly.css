@@ -111,6 +111,19 @@ blockquote {
   color: var(--footnote);
 }
 
+/* — Figures — */
+
+figure {
+  margin: 2rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* — Lists — */
 
 ul, ol {
