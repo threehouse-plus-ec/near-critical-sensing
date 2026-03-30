@@ -27,7 +27,8 @@ This archive contains all current source files for the "Near-Critical Sensing" p
 
 | File | Version | Status |
 |---|---|---|
-| `essay/amplifiers-at-the-boundary-v0.3.0.md` | 0.3.0 | **Current draft** (with quantum boundary-sensing section) |
+| `essay/amplifiers-at-the-boundary-v0.4.0.md` | 0.4.0 | **Current draft** (polished) |
+| `essay/drafts/amplifiers-v0.3.0.md` | 0.3.0 | Superseded |
 | `essay/drafts/amplifiers-v0.2.0.md` | 0.2.0 | Superseded |
 | `essay/drafts/amplifiers-v0.2.1.md` | 0.2.1 | Superseded |
 | `essay/outlines/outline-v0.0.1.md` | 0.0.1 | Superseded |
@@ -35,7 +36,7 @@ This archive contains all current source files for the "Near-Critical Sensing" p
 
 **Title:** *Amplifiers at the Boundary: On the Epistemology of Near-Critical Sensing*
 **Role:** Sail (interpretive essay)
-**~6,500 words**
+**~7,500 words**
 
 ---
 
@@ -78,7 +79,7 @@ This archive contains all current source files for the "Near-Critical Sensing" p
 ### Version History Summary
 
 - **Atmospheric dossier:** v0.1.0 → v0.1.1 (source-hardened) → v0.1.2 (editorially tightened) → **v0.1.3 (frozen)**
-- **Essay:** outline v0.0.1 → v0.0.2 (perception thread) → draft v0.2.0 → v0.2.1 (polished) → **v0.3.0 (quantum section added)**
+- **Essay:** outline v0.0.1 → v0.0.2 (perception thread) → draft v0.2.0 → v0.2.1 (polished) → v0.3.0 (quantum section added) → **v0.4.0 (polished)**
 - **Quantum dossier:** research notes → outline v0.1 → **Section 0 frozen (v0.1.1)** → Section 1 draft (v0.1.0)
 
 ### Build and Deployment

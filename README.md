@@ -26,13 +26,13 @@ A comprehensive historical survey of atmospheric instruments (15th–19th centur
 - **Status:** Source-hardened, editorially tightened, frozen
 - **Length:** ~12,000 words
 
-### 2. Essay: *Amplifiers at the Boundary* (v0.3.0, circulation-ready)
+### 2. Essay: *Amplifiers at the Boundary* (v0.4.0, polished)
 
 An interpretive essay arguing that the sentinel tradition was displaced because its devices were non-invertible, and that the question sentinels were trying to answer — *how close is a system to a qualitative change?* — is now central to modern science. Connects storm-glass physics to bifurcation theory, critical slowing down, early warning signals, and non-Hermitian quantum boundary sensing.
 
 - **Role:** Sail (interprets and argues)
-- **Status:** Polished, circulation-ready
-- **Length:** ~6,500 words
+- **Status:** Polished
+- **Length:** ~7,500 words
 
 ### 3. Quantum Dossier: *Quantum Systems Near Critical Points* (in progress)
 
@@ -62,7 +62,7 @@ near-critical-sensing/
 │   ├── dossier-atmospheric-instruments-v0.1.3-FROZEN.md
 │   └── drafts/
 ├── essay/
-│   ├── amplifiers-at-the-boundary-v0.3.0.md
+│   ├── amplifiers-at-the-boundary-v0.4.0.md
 │   ├── drafts/
 │   └── outlines/
 ├── quantum-dossier/
@@ -89,7 +89,7 @@ See `CITATION.cff` for machine-readable citation metadata.
 > Warring, U. (2026). *From Natural Signs to Measurement Networks: A Historical Dossier on Atmospheric Instruments (15th–19th Century)*. Version 0.1.3. https://github.com/threehouse-plus-ec/near-critical-sensing
 
 **Essay:**
-> Warring, U. (2026). "Amplifiers at the Boundary: On the Epistemology of Near-Critical Sensing." Version 0.3.0. https://github.com/threehouse-plus-ec/near-critical-sensing
+> Warring, U. (2026). "Amplifiers at the Boundary: On the Epistemology of Near-Critical Sensing." Version 0.4.0. https://github.com/threehouse-plus-ec/near-critical-sensing
 
 **Quantum dossier (in progress):**
 > Warring, U. (2026). *Quantum Systems Near Critical Points: A Boundary-Sensing Taxonomy*. In progress. https://github.com/threehouse-plus-ec/near-critical-sensing
