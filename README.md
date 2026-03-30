@@ -32,7 +32,7 @@ An interpretive essay arguing that the sentinel tradition was displaced because 
 
 - **Role:** Sail (interprets and argues)
 - **Status:** Polished
-- **Length:** ~7,500 words
+- **Length:** ~5,900 words
 
 ### 3. Quantum Dossier: *Quantum Systems Near Critical Points* (in progress)
 

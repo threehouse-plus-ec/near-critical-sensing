@@ -36,7 +36,7 @@ This archive contains all current source files for the "Near-Critical Sensing" p
 
 **Title:** *Amplifiers at the Boundary: On the Epistemology of Near-Critical Sensing*
 **Role:** Sail (interpretive essay)
-**~7,500 words**
+**~5,900 words**
 
 ---
 
