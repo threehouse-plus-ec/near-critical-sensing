@@ -385,7 +385,7 @@ This section separates three claims that are often compressed in popular account
 
 **Modern scientific analysis:**
 
-- Kaempf, N. et al. (2025). "The Storm Glass Thermometer: Temperature Dependence of Camphor Crystal Formation in Ethanol," *Journal of Chemical Education*, 102(6), 2540–2542.
+- Kaempfe, N. (2025). "The Storm Glass Thermometer: Temperature Dependence of Camphor Crystal Formation in Ethanol," *Journal of Chemical Education*, 102(6), 2540–2542.
 
 ---
 
@@ -571,7 +571,7 @@ The difference is that modern sentinels operate with *known parameters*, *contro
 ### D. Modern Reinterpretations and Scientific Analyses
 
 - **Harrison, R. G.** (2004). "The global atmospheric electrical circuit and climate," *Surveys in Geophysics*, 25, 441–484.
-- **Kaempf, N.** et al. (2025). "The Storm Glass Thermometer: Temperature Dependence of Camphor Crystal Formation in Ethanol," *J. Chem. Educ.*, 102, 2540–2542.
+- **Kaempfe, N.** (2025). "The Storm Glass Thermometer: Temperature Dependence of Camphor Crystal Formation in Ethanol," *J. Chem. Educ.*, 102, 2540–2542.
 - **Scheffer, M.** et al. (2009). "Early-warning signals for critical transitions," *Nature*, 461, 53–59.
 - **Dakos, V.** et al. (2012). "Methods for detecting early warnings of critical transitions in time series illustrated using simulated ecological data," *PLoS ONE*, 7, e41010.
 - **Stanhill, G.** (2003). "Through a glass brightly: Some new light on the Campbell–Stokes sunshine recorder," *Weather*, 58, 3–11.
