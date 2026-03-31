@@ -234,7 +234,7 @@ The circle does not close, but it rhymes.
 - Lau, H.-K. and A. A. Clerk (2018). "Fundamental limits and non-reciprocal approaches in non-Hermitian quantum sensing." *Nature Communications* 9: 4320.
 - Li, A. et al. (2023). "Exceptional points and non-Hermitian photonics at the nanoscale." *Nature Nanotechnology* 18: 706–720.
 - Li, Y. et al. (2025). "Programmable simulation of high-order exceptional point with a trapped ion." *Quantum Frontiers* 4: 16.
-- Wu, Y. et al. (2025). "Non-Hermitian physics in the quantum regime." *National Science Review* 12: nwaf144.
+- Wu, Y. et al. (2025). "Experimental investigation of non-Hermitian physics in the quantum regime." *National Science Review* 12: nwaf144.
 - Zhang, M. et al. (2019). "Quantum noise theory of exceptional point amplifying sensors." *Physical Review Letters* 123: 180501.
 
 ### Metrology and measurement philosophy
@@ -244,13 +244,13 @@ The circle does not close, but it rhymes.
 
 ### Storm glass chemistry
 
-- Kaempf, N. et al. (2025). "The Storm Glass Thermometer: Temperature Dependence of Camphor Crystal Formation in Ethanol." *Journal of Chemical Education* 102: 2540–2542.
+- Kaempfe, N. (2025). "The Storm Glass Thermometer: Temperature Dependence of Camphor Crystal Formation in Ethanol." *Journal of Chemical Education* 102: 2540–2542.
 
 ---
 
 [^1]: A fuller historical treatment, covering six epistemological layers (state, transport, integration, radiation, electrical, sentinel), is available in the companion dossier "From Natural Signs to Measurement Networks" (v0.1.3). The present essay is self-contained.
 
-[^2]: Kaempf et al. (2025). This study addresses simplified formulations under controlled conditions. Historical storm-glass mixtures were multi-component, not always standardised, and subject to ageing and mechanical disturbance.
+[^2]: Kaempfe (2025). This study addresses simplified formulations under controlled conditions. Historical storm-glass mixtures were multi-component, not always standardised, and subject to ageing and mechanical disturbance.
 
 [^3]: The sentinel category is an analytic construct introduced for this essay, not a term used by historical actors. It groups devices by epistemological function rather than by period terminology.
 
