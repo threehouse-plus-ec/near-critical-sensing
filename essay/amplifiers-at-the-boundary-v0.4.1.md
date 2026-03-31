@@ -103,13 +103,13 @@ The question, then, is not whether sentinels were rightly displaced from state-m
 
 ### The melting crystal
 
-More than a year ago in our laboratory in Freiburg, we were working with a small ion Coulomb crystal — a handful of ions, laser-cooled and confined in a radiofrequency trap, held in an ordered arrangement by their mutual Coulomb repulsion. We had tuned the system near its melting boundary — the regime in which crystalline order becomes unstable. The crystal held. It was stable and ordered, for longer than we expected — until, most plausibly, a single background gas atom collided with one of the ions. The crystal melted.
+In mid 2024, in our laboratory in Freiburg, we were working with a small ion Coulomb crystal — a handful of ions, laser-cooled and confined in a radiofrequency trap, held in an ordered arrangement by their mutual Coulomb repulsion. We had tuned the system near its melting boundary — the regime in which crystalline order becomes unstable. The crystal held. It was stable and ordered, for longer than we expected — until, most plausibly, a single background gas atom collided with one of the ions. The crystal melted.
 
 That observation stayed with me. A perturbation that would have been negligible deep in the ordered phase — one atom, one collision — had triggered a qualitative change, because the system was near a boundary. The response was not proportional; it was categorical. Ordered became disordered. And from the melting event alone, one could not reconstruct what had caused it. A gas collision, a voltage fluctuation on an electrode, a photon recoil from the cooling laser — any of these could have supplied the energy. The output was non-invertible.
 
 I came to recognise this as the same epistemological event I had been reading about in the history of atmospheric instruments. The storm glass sprouting camphor crystals on a November evening and the ion crystal melting from a single collision share the same structure: a system near a boundary, a perturbation amplified beyond proportion, a qualitative response that cannot be traced back to a unique cause. The mathematics developed above — a dominant eigenvalue approaching zero, a restoring rate vanishing, a response that amplifies but does not diagnose — governs both.
 
-The underlying physics differs profoundly: a multi-component solution near its solubility limit is not the same system as a laser-cooled Coulomb crystal near its melting temperature. But the operational signature is shared, and it arises from the same mathematical mechanism — the loss of stiffness at a boundary. This is not analogy in the literary sense. It is the same class of dynamical structure, encountered in substrates separated by two centuries and fifteen orders of magnitude in temperature.
+The underlying physics differs profoundly: a multi-component solution near its solubility limit is not the same system as a laser-cooled Coulomb crystal near its melting temperature. But the operational signature is shared, and it arises from the same mathematical mechanism — the loss of stiffness at a boundary. This is not analogy in the literary sense. It is the same class of dynamical structure, encountered in substrates separated by two centuries and five orders of magnitude in temperature.
 
 ---
 
@@ -233,7 +233,7 @@ The circle does not close, but it rhymes.
 - El-Ganainy, R. et al. (2018). "Non-Hermitian physics and PT symmetry." *Nature Physics* 14: 11–19.
 - Lau, H.-K. and A. A. Clerk (2018). "Fundamental limits and non-reciprocal approaches in non-Hermitian quantum sensing." *Nature Communications* 9: 4320.
 - Li, A. et al. (2023). "Exceptional points and non-Hermitian photonics at the nanoscale." *Nature Nanotechnology* 18: 706–720.
-- Li, Y. et al. (2025). "Programmable simulation of high-order exceptional point with a trapped ion." *Quantum Frontiers* 4: 26.
+- Li, Y. et al. (2025). "Programmable simulation of high-order exceptional point with a trapped ion." *Quantum Frontiers* 4: 16.
 - Wu, Y. et al. (2025). "Non-Hermitian physics in the quantum regime." *National Science Review* 12: nwaf144.
 - Zhang, M. et al. (2019). "Quantum noise theory of exceptional point amplifying sensors." *Physical Review Letters* 123: 180501.
 
