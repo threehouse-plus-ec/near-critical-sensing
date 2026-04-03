@@ -47,15 +47,23 @@ def get_css():
         return f.read()
 
 
-def html_template(title, body_html, nav=True):
-    """Wrap body HTML in a complete page with inlined CSS."""
+def html_template(title, body_html):
+    """Wrap body HTML in a complete page with inlined CSS and brand header."""
     css = get_css()
-    nav_html = ""
-    if nav:
-        links = " ".join(
-            f'<a href="{href}">{text}</a>' for text, href in NAV_LINKS
-        )
-        nav_html = f'<nav class="site-nav">{links}</nav>'
+    links = " ".join(
+        f'<a href="{href}">{text}</a>' for text, href in NAV_LINKS
+    )
+    header_html = f"""<header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand-lockup" href="index.html" aria-label="Near-Critical Sensing home">
+        <img src="assets/emblem-32.svg" alt="T(h)reehouse +EC emblem" width="32" height="32">
+        <img src="assets/wordmark-full.svg" alt="T(h)reehouse +EC wordmark" width="200" height="44">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        {links}
+      </nav>
+    </div>
+  </header>"""
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -63,14 +71,15 @@ def html_template(title, body_html, nav=True):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
+  <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="css/scholarly.css">
   <style>
 {css}
   </style>
 </head>
 <body>
+  {header_html}
   <main>
-    {nav_html}
     {body_html}
   </main>
 </body>
@@ -213,7 +222,7 @@ def build_landing_page():
 """
 
     full_html = html_template(
-        "Near-Critical Sensing \u2014 Project Landing Page", body, nav=False
+        "Near-Critical Sensing \u2014 Project Landing Page", body
     )
     out_path = os.path.join(SITE_DIR, "index.html")
     with open(out_path, 'w') as f:
