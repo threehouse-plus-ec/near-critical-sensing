@@ -334,6 +334,12 @@ nav.site-nav a:hover {
 /* — Responsive — */
 
 @media (max-width: 600px) {
+  .site-header {
+    transition: transform 220ms ease;
+  }
+  .site-header.is-hidden {
+    transform: translateY(calc(-100% - 1px));
+  }
   html {
     font-size: 16px;
   }

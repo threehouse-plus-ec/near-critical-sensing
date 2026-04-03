@@ -82,6 +82,39 @@ def html_template(title, body_html):
   <main>
     {body_html}
   </main>
+  <script>
+    (() => {{
+      const header = document.querySelector('.site-header');
+      if (!header) return;
+
+      const mobileQuery = window.matchMedia('(max-width: 600px)');
+      let lastScrollY = window.scrollY;
+
+      const syncHeader = () => {{
+        if (!mobileQuery.matches) {{
+          header.classList.remove('is-hidden');
+          lastScrollY = window.scrollY;
+          return;
+        }}
+
+        const currentScrollY = window.scrollY;
+        const scrollingDown = currentScrollY > lastScrollY + 8;
+        const scrollingUp = currentScrollY < lastScrollY - 8;
+
+        if (currentScrollY <= 16 || scrollingUp) {{
+          header.classList.remove('is-hidden');
+        }} else if (scrollingDown && currentScrollY > 72) {{
+          header.classList.add('is-hidden');
+        }}
+
+        lastScrollY = currentScrollY;
+      }};
+
+      syncHeader();
+      window.addEventListener('scroll', syncHeader, {{ passive: true }});
+      mobileQuery.addEventListener('change', syncHeader);
+    }})();
+  </script>
 </body>
 </html>
 """
